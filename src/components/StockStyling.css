@@ -1,0 +1,52 @@
+.stockForm {
+  display: flex;
+  align-items: center;
+  width: 600px;
+  height: 40px;
+  margin: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+}
+
+.stockForm input {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 10px 10px 0;
+  margin-bottom: 10px;
+  border: 1px solid rgb(121, 110, 110);
+  background-color: rgb(248, 244, 244);
+  color: #000000;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.stockForm button {
+  border-radius: 8px;
+  width: 100%;
+  padding: 10px;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #aac525;
+  color: #383c26;
+  cursor: pointer;
+}
+
+.stockList {
+  margin: 20px;
+}
+
+.stockForm button:hover {
+  background-color: #869829;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin: 5px 0 10px 0;
+  text-align: center;
+}
