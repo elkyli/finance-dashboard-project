@@ -51,9 +51,10 @@ const StockList = () => {
           ))}
         </ul>
       ) : (
-        <p>
-          <h3>No stocks added yet.</h3>
-        </p>
+        <div>
+          <p>No stocks added yet.</p>
+          <h3>Please add some stocks to see the list.</h3>
+        </div>
       )}
     </div>
   );
