@@ -12,7 +12,7 @@ export const StockProvider = ({ children }) => {
   useEffect(() => {
     const fetchValidSymbols = async () => {
       const apiKey = "IK1E81QFXW3302JN";
-      const apiUrl = `https://www.alphavantage.co/query?function=BATCH_STOCK_QUOTES&symbols=${symbolsQuery}&apikey=${apiKey}`;
+      const apiUrl = `https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbols=${symbolsQuery}&apikey=${apiKey}`;
 
       try {
         const response = await fetch(apiUrl);
@@ -31,7 +31,7 @@ export const StockProvider = ({ children }) => {
       const apiKey = "IK1E81QFXW3302JN";
       const symbolsQuery = stocks.map((stock) => stock.symbol).join(",");
       setSymbolsQuery(symbolsQuery);
-      const apiUrl = `https://www.alphavantage.co/query?function=BATCH_STOCK_QUOTES&symbols=${symbolsQuery}&apikey=${apiKey}`;
+      const apiUrl = `https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbols=${symbolsQuery}&apikey=${apiKey}`;
 
       try {
         const response = await fetch(apiUrl);
